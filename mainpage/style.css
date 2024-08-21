@@ -5,6 +5,7 @@ body {
 
 main {
     min-height: calc(100vh - 200px);
+
 }
 .logo-item {
     width: 75px;
