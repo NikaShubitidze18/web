@@ -15,26 +15,27 @@
 </head>
 <body>
     <header>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#" onclick="location.reload()"><img class="logo-item" src="img/ფდ.jpg" alt="#"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse d-xl-flex justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#" onclick="location.reload()" >ჩვენს შესახებ</a>
-                        <a class="nav-link" href="page/service.html" >სერვისი</a>
-                        <a class="nav-link" href="project page/project.html" >პროექტები</a>
-                        <a class="nav-link" href="page-two/contact.html">კონტაქტი</a>
-                    </div>
-                </div>
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#" onclick="location.reload()"><img class="logo-item"  width="75"  src="img/ფდ.jpg" alt="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-xl-flex justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#" onclick="location.reload()">ჩვენს შესახებ</a>
+                <a class="nav-link" href="page/service.html">სერვისი</a>
+                <a class="nav-link" href="project page/project.html">პროექტები</a>
+                <a class="nav-link" href="page-two/contact.html">კონტაქტი</a>
             </div>
-        </nav>
+        </div>
+    </div>
+</nav>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <div class="background-img">
             <button class="button-one button-wrap"></button>
             <button class="button-two button-wrap"></button>
@@ -42,8 +43,9 @@
             <button class="button-four button-wrap"></button>
             <button class="button-five button-wrap"></button>
             <img src="img/fds.PNG" alt="">
-        </div>
-        <div class="services-grid">
+
+        <!-- Services Section -->
+         <div class="services-grid">
             <div class="service">
                 <img src="img/უსათაურო დიზაინი (6).png"  alt="Strategy">
                 <h3>Strategy</h3>
@@ -65,73 +67,111 @@
                 <h3>Social Media</h3>
             </div>
         </div>
-        <div class="main-text">
-            <h2>რატომ <span style="color: rgb(255, 81, 0);">ჯეობორი?</span></h2>
-            <p class="main-text-two">Choosing Crossin means choosing a modern product and professional implementation by Authorized Contractors recommended by the manufacturer. Crossin products provide the highest insulation performance, and the spray application method ensures a tight insulation layer free of thermal bridges. The combination of product quality and care in the contractors' execution means comfort and savings over the life of the house. Crossin is insulation that provides warmth in winter and pleasant coolness in summer.</p>
+        <!-- Why Geobor Section -->
+        <div class="container my-5">
+            <div class="text-center">
+                <h2>რატომ <span class="text-primary">ჯეობორი?</span></h2>
+                <p class="mt-3">
+                    Choosing Crossin means choosing a modern product and professional implementation by Authorized Contractors recommended by the manufacturer. Crossin products provide the highest insulation performance, and the spray application method ensures a tight insulation layer free of thermal bridges. The combination of product quality and care in the contractors' execution means comfort and savings over the life of the house. Crossin is insulation that provides warmth in winter and pleasant coolness in summer.
+                </p>
+            </div>
         </div>
 
-        <div class="video-main">
-            <div class="video-container">
-                <video id="background-video" autoplay muted loop>
+        <!-- Video Section -->
+        <div class="container-fluid p-0">
+            <div class="ratio ratio-16x9">
+                <video autoplay muted loop>
                     <source src="img/ჯეობორი 11.mp4" type="video/mp4">
                 </video>
             </div>
         </div>
 
-        <div class="text-wrapper">
-            <div class="leftside-text">
-                <h1>Wide application <br> in Construction</h1>
-                <p>PUR foam spraying is a modern insulation system widely used in energy-efficient construction. It is used in both single and multi-family housing, as well as in industry and agriculture. Installation is extremely fast, and the method of application allows the elimination of thermal bridges.</p>
-                <button class="main-button">View Products</button>
-            </div>
-            <div class="rightside">
-                <img class="img-rightside" src="img/უსათაურო დიზაინი (7).png" alt="#">
-                <img class="img-rightside" src="img/უსათაურო დიზაინი (7).png" alt="#">
-                <img class="img-rightside" src="img/უსათაურო დიზაინი (7).png" alt="#">
-                <img class="img-rightside" src="img/უსათაურო დიზაინი (7).png" alt="#">
+        <!-- Application in Construction Section -->
+        <div class="container my-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2>Wide application in Construction</h2>
+                    <p>
+                        PUR foam spraying is a modern insulation system widely used in energy-efficient construction. It is used in both single and multi-family housing, as well as in industry and agriculture. Installation is extremely fast, and the method of application allows the elimination of thermal bridges.
+                    </p>
+                    <button class="btn btn-primary">View Products</button>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <img src="img/უსათაურო დიზაინი (7).png" alt="#" class="img-fluid">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/უსათაურო დიზაინი (7).png" alt="#" class="img-fluid">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/უსათაურო დიზაინი (7).png" alt="#" class="img-fluid">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/უსათაურო დიზაინი (7).png" alt="#" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="news-page">
-            <div class="card-one shadow bg-body-tertiary rounded">
-                <img class="newpage-img" src="img/fds.PNG" alt="">
-                <h1>Designation and <br> documentation of building <br> materials</h1>
-                <button class="news-page-button">View More</button>
-            </div>
-            <div class="card-one shadow bg-body-tertiary rounded">
-                <img class="newpage-img" src="img/fds.PNG" alt="">
-                <h1>Loft insulation without <br> thermal bridges</h1>
-                <button class="news-page-button">View More</button>
-            </div>
-            <div class="card-one shadow bg-body-tertiary rounded">
-                <img class="newpage-img" src="img/fds.PNG" alt="">
-                <h1>Effective loft insulation</h1>
-                <button class="news-page-button">View More</button>
+        <!-- News Section -->
+        <div class="container my-5">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/fds.PNG" class="card-img-top" alt="News Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Designation and documentation of building materials</h5>
+                            <button class="btn btn-outline-primary mt-3">View More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/fds.PNG" class="card-img-top" alt="News Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Loft insulation without thermal bridges</h5>
+                            <button class="btn btn-outline-primary mt-3">View More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/fds.PNG" class="card-img-top" alt="News Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Effective loft insulation</h5>
+                            <button class="btn btn-outline-primary mt-3">View More</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section logo">
-                <h2>ჯეობორი</h2>
-                <img src="#" alt="Crossin Logo">
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <h4>ჯეობორი</h4>
+                    <img src="img/logo.png" alt="Crossin Logo" class="img-fluid mt-2" width="150">
+                </div>
+                <div class="col-md-4">
+                    <h4>Follow Us</h4>
+                    <a href="#" class="d-block text-light mt-2"><i class="fab fa-facebook-f me-2"></i>Facebook</a>
+                    <a href="#" class="d-block text-light mt-2"><i class="fab fa-instagram me-2"></i>Instagram</a>
+                    <a href="#" class="d-block text-light mt-2"><i class="fab fa-youtube me-2"></i>YouTube</a>
+                </div>
+                <div class="col-md-4">
+                    <h4>კონტაქტი</h4>
+                    <p class="mt-2"><i class="fas fa-phone me-2"></i>123-45-67-89</p>
+                    <p><i class="fas fa-envelope me-2"></i>www@website.com</p>
+                </div>
             </div>
-
-            <div class="footer-section social">
-                <h2>Follow Us</h2>
-                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
-                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-                <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+            <div class="text-center mt-4">
+                <p class="mb-0">&copy; 2023 Geobor. All rights reserved. | <a href="#" class="text-light">Privacy Policy</a> | <a href="#" class="text-light">Processing of Personal Data</a></p>
             </div>
-            <div class="footer-section contact">
-                <h2>კონტაქტი</h2>
-                <p><i class="fas fa-phone"></i> 123-45-67-89</p>
-                <p><i class="fas fa-envelope"></i> www@website.com</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>Copyright | <a href="#">Privacy Policy</a> | <a href="#">Processing of Personal Data</a></p>
         </div>
     </footer>
 
