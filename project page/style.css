@@ -1,0 +1,45 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+main {
+    min-height: calc(100vh - 200px);
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 3%;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.label {
+    background-color: #a319a0;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 1.2em;
+    position: relative;
+    top: -10px;
+}
+
+.description {
+    padding: 20px;
+    font-size: 1em;
+}
