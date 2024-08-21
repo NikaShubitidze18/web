@@ -1,13 +1,13 @@
 body {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
 }
 
 main {
     min-height: calc(100vh - 200px);
-
 }
+
 .logo-item {
     width: 75px;
     margin-top: 5px;
@@ -19,8 +19,7 @@ main {
 
 .background-img img {
     width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
+    object-fit: cover;
 }
 
 .button-one {
@@ -38,7 +37,7 @@ main {
     height: 20px;
     border-radius: 50%;
     position: absolute;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Initial shadow */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     animation: breathe 4s linear infinite;
     background-color: rgb(243, 168, 5);
     border: 1px solid white;
@@ -85,7 +84,7 @@ main {
 }
 
 .service {
-    width: 200px;
+    width: 180px;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
@@ -96,8 +95,8 @@ main {
 }
 
 .service img {
-    width: 200px;
-    height: max-content;
+    width: 100%;
+    height: auto;
     margin-bottom: 20px;
 }
 
@@ -110,12 +109,15 @@ main {
     color: #777;
     font-size: 0.9em;
 }
+
 .service:hover {
     transform: translateY(-10px);
 }
-.main-text{
+
+.main-text {
     margin-top: 5%;
 }
+
 .main-text-two {
     width: 75%;
     margin-top: 2%;
@@ -156,11 +158,11 @@ main {
 
 .rightside {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Creates 2 columns of equal width */
-    grid-template-rows: repeat(2, 1fr);    /* Creates 2 rows of equal height */
-    gap: 10px; /* Space between grid items */
-    width: 50%; /* Set width for the grid container */
-    height: 400px; /* Set height for the grid container */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: 50%;
+    height: 400px;
     margin-left: 12%;
 }
 
@@ -169,7 +171,7 @@ main {
     height: 35px;
     background-color: rgb(243, 168, 5);
     color: white;
-    border: 0px;
+    border: 0;
     border-radius: 12px;
     margin-top: 10px;
 }
@@ -194,7 +196,7 @@ main {
     width: 150px;
     height: 40px;
     border-radius: 15px;
-    border: 0px;
+    border: 0;
     background-color: rgb(243, 168, 5);
     color: white;
 }
@@ -210,7 +212,7 @@ main {
     border-radius: 12px;
 }
 
-/*-------------------Footer Styles-------*/
+/* Footer Styles */
 footer {
     background-color: #000;
     color: #fff;
@@ -286,7 +288,7 @@ footer {
     font-size: 20px;
 }
 
-/*-------------------Animation-------*/
+/* Animation */
 @keyframes breathe {
     0% {
         box-shadow: 0 0 0 2px rgba(237, 3, 245, 0.397);
@@ -299,13 +301,17 @@ footer {
     }
 }
 
-/*---------------Mobile Styles-------*/
+/* Mobile Styles */
 @media (max-width: 540px) {
     .logo-item {
-        width: 50px; /* Reduced logo size for mobile */
+        width: 50px;
     }
 
-    .button-one, .button-two, .button-three, .button-four, .button-five {
+    .button-one,
+    .button-two,
+    .button-three,
+    .button-four,
+    .button-five {
         width: 15px;
         height: 15px;
     }
@@ -396,41 +402,32 @@ footer {
     }
 }
 
-/* Media query for screens up to 768px */
+/* Tablet Styles */
 @media (max-width: 768px) {
     .logo-item {
-        width: 40px; /* Further reduced logo size for smaller screens */
+        width: 40px;
     }
 
-    .button-one, .button-two, .button-three, .button-four, .button-five {
+    .button-one,
+    .button-two,
+    .button-three,
+    .button-four,
+    .button-five {
         width: 10px;
         height: 10px;
     }
 
     .button-one { margin-top: 10em; margin-left: 5em; }
-    .button-two { margin-top: 12em; margin-left: 6em; }
-    .button-three { margin-top: 14em; margin-left: 5em; }
-    .button-four { margin-top: 16em; margin-left: 4em; }
-    .button-five { margin-top: 18em; margin-left: 5em; }
-
-    .home-wrapper {
-        flex-direction: column;
-        align-items: center;
+    .button-two { margin-top: 12em; margin-left: 5em; }
+    .services-grid {
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
 
-    .home-picture-wrap {
-        width: 80%;
-    }
-
-    .main-text-two {
-        width: 90%;
-    }
-
-    .video-container {
+    .service {
         width: 100%;
-    }
-
-    .text-wrapper {
-        flex-direction: column;
+        margin: 0;
     }
 }
